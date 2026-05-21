@@ -10,7 +10,7 @@
   "use strict";
 
   /**
-   * Header
+   * Header 1
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
 
