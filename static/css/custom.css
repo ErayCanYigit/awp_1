@@ -1,0 +1,562 @@
+/* ========================================
+   Eray Can Yiğit — Özel Tasarım Stilleri
+   ======================================== */
+
+/* ---------- Gece Modu Geçiş Butonu ---------- */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #149ddd, #0d6efd);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(20, 157, 221, 0.4);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(20, 157, 221, 0.6);
+}
+
+/* ================================================
+   SOL SIDEBAR — AÇILIR/KAPANIR MASAÜSTÜ TOGGLe
+   ================================================ */
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 99999;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(5, 13, 24, 0.85);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.sidebar-toggle-btn:hover {
+  background: #149ddd;
+  transform: scale(1.05);
+}
+/* Sidebar kapalıyken */
+body.sidebar-collapsed #header {
+  left: -300px;
+}
+body.sidebar-collapsed .main {
+  margin-left: 0 !important;
+}
+body.sidebar-collapsed #footer {
+  margin-left: 0 !important;
+}
+body.sidebar-collapsed .sidebar-toggle-btn i::before {
+  content: "\f479"; /* bi-list */
+}
+/* Sidebar animasyonu */
+#header {
+  transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.main, #footer {
+  transition: margin-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ---------- Gece Modu Genel Stiller ---------- */
+body.dark-mode {
+  background-color: #0a0f1a !important;
+  color: #c8ccd4 !important;
+}
+body.dark-mode .main {
+  background-color: #0a0f1a !important;
+}
+body.dark-mode .section {
+  background-color: #0a0f1a !important;
+}
+body.dark-mode .section.light-background {
+  background-color: #111827 !important;
+}
+body.dark-mode .section-title h2 {
+  color: #e2e8f0 !important;
+}
+body.dark-mode .section-title h2::after {
+  background: #149ddd !important;
+}
+body.dark-mode .section-title p {
+  color: #94a3b8 !important;
+}
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+  color: #e2e8f0 !important;
+}
+body.dark-mode p {
+  color: #94a3b8 !important;
+}
+body.dark-mode .content ul li span {
+  color: #cbd5e1 !important;
+}
+body.dark-mode .footer {
+  background-color: #0f172a !important;
+}
+body.dark-mode .footer p,
+body.dark-mode .footer .credits,
+body.dark-mode .footer .credits a {
+  color: #64748b !important;
+}
+
+/* ---------- Gece Modu — Hakkımda Kartı ---------- */
+body.dark-mode .about-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a) !important;
+  border-color: #1e3a5f !important;
+}
+body.dark-mode .about-card .info-label {
+  color: #64748b !important;
+}
+body.dark-mode .about-card .info-value {
+  color: #e2e8f0 !important;
+}
+
+/* ---------- Gece Modu — Beceriler ---------- */
+body.dark-mode .skill-category-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a) !important;
+  border-color: #1e3a5f !important;
+}
+body.dark-mode .skill-category-title {
+  color: #38bdf8 !important;
+}
+body.dark-mode .progress {
+  background-color: #1e293b !important;
+}
+body.dark-mode .skill span {
+  color: #e2e8f0 !important;
+}
+
+/* ---------- Gece Modu — Zaman Çizelgesi ---------- */
+body.dark-mode .timeline-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a) !important;
+  border-color: #1e3a5f !important;
+}
+body.dark-mode .timeline-card .company-badge {
+  background: rgba(20, 157, 221, 0.15) !important;
+  color: #38bdf8 !important;
+}
+body.dark-mode .timeline-bullets li {
+  color: #94a3b8 !important;
+}
+
+/* ---------- Gece Modu — Sertifika ---------- */
+body.dark-mode .cert-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a) !important;
+  border-color: #1e3a5f !important;
+}
+body.dark-mode .cert-card .cert-issuer {
+  color: #64748b !important;
+}
+
+/* ---------- Gece Modu — Portfolyo ---------- */
+body.dark-mode .portfolio-content {
+  background: #1e293b !important;
+}
+body.dark-mode .project-desc h5 {
+  color: #e2e8f0 !important;
+}
+body.dark-mode .project-desc p {
+  color: #94a3b8 !important;
+}
+
+/* ---------- Gece Modu — İletişim ---------- */
+body.dark-mode .info-wrap {
+  background: #1e293b !important;
+  border-color: #1e3a5f !important;
+}
+body.dark-mode .info-item h3 {
+  color: #e2e8f0 !important;
+}
+body.dark-mode .info-item p {
+  color: #94a3b8 !important;
+}
+body.dark-mode .form-control {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+/* ---------- Gece Modu — Sidebar Toggle ---------- */
+body.dark-mode .sidebar-toggle-btn {
+  background: rgba(30, 41, 59, 0.9);
+}
+
+/* ================================================
+   AÇIK MOD — Geliştirilmiş Tasarım
+   ================================================ */
+
+/* ---------- Hakkımda Bölümü Kartı ---------- */
+.about-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+.about-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.about-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.about-info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+  transition: all 0.2s ease;
+}
+.about-info-item:hover {
+  background: #eef6fd;
+}
+.about-info-item .info-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #149ddd, #0d6efd);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.about-info-item .info-label {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.about-info-item .info-value {
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* ---------- Gece Modu Hakkımda Info ---------- */
+body.dark-mode .about-info-item {
+  background: rgba(30, 58, 95, 0.3) !important;
+}
+body.dark-mode .about-info-item:hover {
+  background: rgba(30, 58, 95, 0.5) !important;
+}
+
+/* ---------- Beceriler Kategori Kartları ---------- */
+.skill-category-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+.skill-category-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+.skill-category-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #149ddd;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skill-category-title i {
+  font-size: 22px;
+}
+
+/* ---------- Zaman Çizelgesi (Deneyim/Eğitim) ---------- */
+.timeline-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px 32px 28px 32px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 28px;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #149ddd, #0d6efd);
+  border-radius: 5px 0 0 5px;
+}
+.timeline-card:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+/* ---------- BÜYÜK Şirket/Kurum Logosu ---------- */
+.timeline-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+.timeline-logo-wrap {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 0;
+  position: relative;
+}
+.timeline-logo-wrap a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  position: relative;
+}
+.timeline-logo-wrap a::after {
+  content: '\f625'; /* Bootstrap icons bi-zoom-in */
+  font-family: 'bootstrap-icons';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(20, 157, 221, 0.85);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.timeline-logo-wrap:hover a::after {
+  opacity: 1;
+}
+.timeline-card:hover .timeline-logo-wrap {
+  border-color: #149ddd;
+  box-shadow: 0 12px 28px rgba(20, 157, 221, 0.25);
+  transform: scale(1.05) translateY(-5px);
+}
+.timeline-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+.timeline-card:hover .timeline-logo-wrap img {
+  transform: scale(1.05);
+}
+
+/* Gece modu logo kutusu */
+body.dark-mode .timeline-logo-wrap {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+body.dark-mode .timeline-card:hover .timeline-logo-wrap {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.15) !important;
+}
+
+.timeline-meta {
+  flex: 1;
+}
+.timeline-meta h4 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+.company-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 16px;
+  border-radius: 20px;
+  background: rgba(20, 157, 221, 0.1);
+  color: #149ddd;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.timeline-date {
+  font-size: 13px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.timeline-date .date-separator {
+  margin-left: 12px;
+}
+.timeline-bullets {
+  list-style: none;
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+.timeline-bullets li {
+  padding: 6px 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 22px;
+}
+.timeline-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #149ddd, #0d6efd);
+}
+
+/* ---------- Sertifika Kartları ---------- */
+.cert-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cert-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+.cert-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #149ddd, #0d6efd);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.cert-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+.cert-issuer {
+  font-size: 14px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.cert-date {
+  font-size: 13px;
+  color: #149ddd;
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+/* ---------- Portfolyo İyileştirmesi ---------- */
+.portfolio-content {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+.project-desc {
+  padding: 16px 4px;
+}
+.project-desc h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+.project-desc p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+.project-desc .tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.project-desc .tech-badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(20, 157, 221, 0.1);
+  color: #149ddd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1199px) {
+  .sidebar-toggle-btn {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .about-info-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .timeline-logo-wrap {
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+  }
+}

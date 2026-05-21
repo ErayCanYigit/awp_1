@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  {% include 'includes/head.html' with title=page_title %}
+</head>
+
+<body class="index-page">
+
+  <!-- Sidebar Açma/Kapama Butonu (Masaüstü) -->
+  <button class="sidebar-toggle-btn d-none d-xl-flex" id="sidebarToggle" title="Menüyü Aç/Kapa">
+    <i class="bi bi-layout-sidebar-inset" id="sidebarIcon"></i>
+  </button>
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="{% get_media_prefix %}img/profile.png" alt="{{ home_banner_name }}" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="{% url 'index' %}" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">{{ home_banner_name|default:"Eray Can Yiğit" }}</h1>
+    </a>
+
+    <div class="social-links text-center">
+      {% for link in social_links %}
+      <a href="{{ link.url }}" target="_blank" class="{{ link.platform|lower }}"><i class="{{ link.icon_class }}"></i></a>
+      {% endfor %}
+    </div>
+
+    {% include 'includes/navbar.html' %}
+
+  </header>
+
+  <main class="main">
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Telif Hakkı</span> <strong class="px-1 sitename">{{ home_banner_name|default:"Eray Can Yiğit" }}</strong> <span>Tüm Hakları Saklıdır</span></p>
+      </div>
+      <div class="credits">
+        Tasarım: <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Yukarı Kaydır -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Gece Modu Butonu -->
+  <button class="dark-mode-toggle" id="darkModeToggle" title="Gece/Gündüz Modu">
+    <i class="bi bi-moon-fill" id="darkModeIcon"></i>
+  </button>
+
+  <!-- Ön Yükleme -->
+  <div id="preloader"></div>
+
+  <!-- Eklenti JS Dosyaları -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Ana JS Dosyası -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <!-- Gece Modu + Sidebar Toggle JS -->
+  <script>
+    (function() {
+      /* ---- Gece Modu ---- */
+      const darkToggle = document.getElementById('darkModeToggle');
+      const darkIcon = document.getElementById('darkModeIcon');
+      const savedDark = localStorage.getItem('darkMode');
+
+      if (savedDark === 'true') {
+        document.body.classList.add('dark-mode');
+        darkIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+      }
+
+      darkToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDark);
+        if (isDark) {
+          darkIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+        } else {
+          darkIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+        }
+      });
+
+      /* ---- Sidebar Aç/Kapa (Masaüstü) ---- */
+      const sidebarToggle = document.getElementById('sidebarToggle');
+      const sidebarIcon = document.getElementById('sidebarIcon');
+      const savedSidebar = localStorage.getItem('sidebarCollapsed');
+
+      if (savedSidebar === 'true') {
+        document.body.classList.add('sidebar-collapsed');
+        sidebarIcon.classList.replace('bi-layout-sidebar-inset', 'bi-layout-sidebar');
+      }
+
+      if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', function() {
+          document.body.classList.toggle('sidebar-collapsed');
+          const isCollapsed = document.body.classList.contains('sidebar-collapsed');
+          localStorage.setItem('sidebarCollapsed', isCollapsed);
+          if (isCollapsed) {
+            sidebarIcon.classList.replace('bi-layout-sidebar-inset', 'bi-layout-sidebar');
+          } else {
+            sidebarIcon.classList.replace('bi-layout-sidebar', 'bi-layout-sidebar-inset');
+          }
+          /* AOS animasyonlarını yeniden hesapla */
+          setTimeout(function() {
+            if (typeof AOS !== 'undefined') AOS.refresh();
+          }, 500);
+        });
+      }
+    })();
+  </script>
+
+  {% block extra_scripts %}
+  {% endblock %}
+
+</body>
+
+</html>

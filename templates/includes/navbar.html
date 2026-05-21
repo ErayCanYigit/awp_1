@@ -1,0 +1,12 @@
+{% load static %}
+<nav id="navmenu" class="navmenu">
+  <ul>
+    {% for link in navbar_links %}
+    <li>
+      <a href="{{ link.url }}" class="{% if request.resolver_match.url_name == 'index' and 'contact' not in link.url and forloop.first or request.resolver_match.url_name == 'contact' and 'contact' in link.url %}active{% endif %}">
+        <i class="{{ link.icon_class }}"></i> {{ link.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

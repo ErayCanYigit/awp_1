@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: myportfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "0.0.0.0:8000:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/srv/app
+volumes:
+  static-data:

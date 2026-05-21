@@ -1,0 +1,505 @@
+[
+  {
+    "model": "core.generalsetting",
+    "pk": 1,
+    "fields": {
+      "name": "site_title",
+      "description": "Website title",
+      "parameter": "Eray Can Yiğit - Portfolio",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 2,
+    "fields": {
+      "name": "site_keywords",
+      "description": "SEO keywords",
+      "parameter": "Eray Can Yiğit, Bilişim Sistemleri Mühendisi, Portfolio, Cloud Engineer, DevOps, AWS",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 3,
+    "fields": {
+      "name": "site_description",
+      "description": "SEO description",
+      "parameter": "Eray Can Yiğit - Bilişim Sistemleri Mühendisliği öğrencisi, Cloud & DevOps tutkunu",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 4,
+    "fields": {
+      "name": "home_banner_name",
+      "description": "Name on hero banner",
+      "parameter": "Eray Can Yiğit",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 5,
+    "fields": {
+      "name": "home_banner_title",
+      "description": "Title on hero banner",
+      "parameter": "Bilişim Sistemleri Mühendisi",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 6,
+    "fields": {
+      "name": "home_banner_description",
+      "description": "Description on hero banner",
+      "parameter": "Piri Reis Üniversitesi Bilişim Sistemleri Mühendisliği 3. sınıf öğrencisi. Yazılım geliştirme, bulut bilişim ve siber güvenlik alanlarında kendini sürekli geliştiren, çözüm odaklı bir mühendis adayı.",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 7,
+    "fields": {
+      "name": "about_myself_welcome",
+      "description": "About section main text",
+      "parameter": "Piri Reis Üniversitesi'nde 3. sınıf Bilişim Sistemleri Mühendisliği öğrencisiyim. Yazılım geliştirme, bulut bilişim ve siber güvenlik alanlarına ilgi duyuyor, bu konularda kendimi sürekli geliştirmeye çalışıyorum. MSK Global Elektronik'te edindiğim network yönetimi, firewall konfigürasyonları ve veri merkezi kurulum deneyimlerinin ardından, LimonCloud bünyesinde DevOps ve AWS odaklı projelerde aktif rol aldım. Gerçek projelerde görev alarak altyapı tasarımı, servis yönetimi ve ekip çalışması gibi beceriler kazandım. Sonrasında İstanbul Valiliği Bilgi İşlem Şube Müdürlüğü'nde web uygulama geliştirme, SQL entegrasyonu ve Palo Alto güvenlik duvarı üzerinde yapılandırmalar gerçekleştirdim.",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 8,
+    "fields": {
+      "name": "about_myself_footer",
+      "description": "About section footer text",
+      "parameter": "C/C++, Python ve JavaScript dilleriyle çalışıyor; AWS, Google Cloud ve Huawei Cloud altyapıları üzerine yetkinliklerimi artırmaya odaklanıyorum. Amacım, teknolojiyle değer üreten, çözüm odaklı ve gelişime açık bir mühendis olmak.",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 9,
+    "fields": {
+      "name": "about_birthday",
+      "description": "Birthday info",
+      "parameter": "2004",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 10,
+    "fields": {
+      "name": "about_phone",
+      "description": "Phone number",
+      "parameter": "+90 553 786 1560",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 11,
+    "fields": {
+      "name": "about_email",
+      "description": "Email address",
+      "parameter": "erayc4nntr@gmail.com",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 12,
+    "fields": {
+      "name": "about_city",
+      "description": "City info",
+      "parameter": "İstanbul, Türkiye",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 13,
+    "fields": {
+      "name": "about_degree",
+      "description": "Degree info",
+      "parameter": "Lisans (3. Sınıf)",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 14,
+    "fields": {
+      "name": "about_university",
+      "description": "University info",
+      "parameter": "Piri Reis Üniversitesi",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 15,
+    "fields": {
+      "name": "typed_items",
+      "description": "Typed.js animation items",
+      "parameter": "Bilişim Sistemleri Mühendisi, Bulut Bilişim Stajyeri, Yazılım Geliştirici",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 16,
+    "fields": {
+      "name": "contact_address",
+      "description": "Contact address",
+      "parameter": "İstanbul, Türkiye",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 17,
+    "fields": {
+      "name": "contact_phone",
+      "description": "Contact phone",
+      "parameter": "+90 553 786 1560",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 18,
+    "fields": {
+      "name": "contact_email",
+      "description": "Contact email",
+      "parameter": "erayc4nntr@gmail.com",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.generalsetting",
+    "pk": 19,
+    "fields": {
+      "name": "hero_subtitle",
+      "description": "Hero subtitle before typed items",
+      "parameter": "",
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 1,
+    "fields": {
+      "name": "Python",
+      "percentage": 90,
+      "order": 1,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "programlama"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 2,
+    "fields": {
+      "name": "AWS (EC2, S3)",
+      "percentage": 85,
+      "order": 2,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "bulut"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 3,
+    "fields": {
+      "name": "Docker & Kubernetes",
+      "percentage": 75,
+      "order": 3,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "bulut"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 4,
+    "fields": {
+      "name": "SQL & Veritabanları",
+      "percentage": 70,
+      "order": 4,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "veritabani"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 5,
+    "fields": {
+      "name": "JavaScript",
+      "percentage": 50,
+      "order": 5,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "programlama"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 6,
+    "fields": {
+      "name": "C/C++",
+      "percentage": 65,
+      "order": 6,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "programlama"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 7,
+    "fields": {
+      "name": "Linux",
+      "percentage": 70,
+      "order": 7,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "ag_guvenlik"
+    }
+  },
+  {
+    "model": "core.skill",
+    "pk": 8,
+    "fields": {
+      "name": "Ağ Güvenliği",
+      "percentage": 60,
+      "order": 8,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z",
+      "category": "ag_guvenlik"
+    }
+  },
+  {
+    "model": "core.experience",
+    "pk": 1,
+    "fields": {
+      "company": "İstanbul Valiliği",
+      "position": "IT Sistem ve Altyapı Stajyeri",
+      "location": "İstanbul, Fatih",
+      "start_date": "08.2025",
+      "end_date": "08.2025",
+      "description": "Bilgi İşlem Şube Müdürlüğü",
+      "bullet_points": "İç envanter yönetim web uygulamasının geliştirilmesi ve SQL entegrasyonuna destek verdim.\nPalo Alto güvenlik duvarında ağ trafiğini izledim, kullanıcı ve politika yapılandırmaları yaptım.\nSunucu odasında yeni kurulan Cisco ağ anahtarlarının temel yapılandırmalarını gerçekleştirdim.",
+      "order": 1,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.experience",
+    "pk": 2,
+    "fields": {
+      "company": "Limon Cloud",
+      "position": "Cloud & DevOps Stajyeri",
+      "location": "İstanbul, Kağıthane",
+      "start_date": "06.2025",
+      "end_date": "07.2025",
+      "description": "",
+      "bullet_points": "AWS üzerinde temel servislerin (EC2, S3) kurulum ve yapılandırmasına destek verdim.\nCI/CD süreçlerini analiz ettim ve test ortamlarında temel DevOps araçlarını (Git, Docker) kullandım.\nBulut tabanlı uygulamaların izlenmesi ve temel yönetim süreçlerine katkıda bulundum.",
+      "order": 2,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.experience",
+    "pk": 3,
+    "fields": {
+      "company": "MSK Global Elektronik",
+      "position": "IT Destek Asistanı",
+      "location": "İstanbul, Şişli",
+      "start_date": "06.2024",
+      "end_date": "09.2024",
+      "description": "",
+      "bullet_points": "Fortinet ve Palo Alto güvenlik duvarlarının ilk kurulum ve politika yapılandırmalarını gerçekleştirdim.\nVeri merkezleri ve sunucu odalarının planlama ve fiziksel kurulum süreçlerine destek verdim.\nHuawei Cloud platformundaki temel servislerin yönetimine katkıda bulundum.",
+      "order": 3,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.education",
+    "pk": 1,
+    "fields": {
+      "institution": "Piri Reis Üniversitesi",
+      "degree": "Lisans Derecesi",
+      "field": "Bilişim Sistemleri Mühendisliği",
+      "location": "İstanbul, Tuzla",
+      "start_date": "2023",
+      "end_date": "2027 (Beklenen)",
+      "gpa": "3.10 / 4.00",
+      "description": "Mühendislik Fakültesi",
+      "order": 1,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 1,
+    "fields": {
+      "title": "AWS üzerinde Yüksek Trafikli WordPress Sitesi Dağıtımı",
+      "category": "cloud",
+      "description": "EC2 Auto Scaling, RDS, ElastiCache, EFS ve Docker kullanarak ölçeklenebilir bir WordPress mimarisi tasarladım ve dağıttım. CloudFront, WAF ve Route 53 ile güvenlik sağladım.",
+      "image": "img/portfolio/aws-wordpress.jpeg",
+      "url": "",
+      "technologies": "AWS, EC2, RDS, Docker, CloudFront",
+      "order": 1,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 2,
+    "fields": {
+      "title": "AWS Bedrock ile Tarif & Alışveriş Sitesi Sohbet Botu",
+      "category": "ai",
+      "description": "AWS Bedrock Knowledge Base, Titan Embeddings ve OpenSearch kullanarak chatbot geliştirdim. Web API'den veri çekip yapılandıran Python script yazdım.",
+      "image": "img/portfolio/aws-bedrock.png",
+      "url": "",
+      "technologies": "AWS Bedrock, Python, OpenSearch",
+      "order": 2,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.project",
+    "pk": 3,
+    "fields": {
+      "title": "Gurmeo - Full-Stack Gurme Keşif Platformu",
+      "category": "web",
+      "description": "Node.js, Express ve MySQL kullanarak kapsamlı bir full-stack web uygulaması geliştirdim; social networking özellikleri, dietary-based filtering ve secure review management system içermektedir.",
+      "image": "img/portfolio/gurmeo.png",
+      "url": "",
+      "technologies": "Node.js, Express, MySQL",
+      "order": 3,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.certificate",
+    "pk": 1,
+    "fields": {
+      "name": "AWS Certified Cloud Practitioner (CLF-C02)",
+      "issuer": "Amazon Web Services",
+      "date": "Temmuz 2025",
+      "description": "",
+      "order": 1,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.certificate",
+    "pk": 2,
+    "fields": {
+      "name": "LFS101: Introduction to Linux",
+      "issuer": "The Linux Foundation",
+      "date": "Ağustos 2025",
+      "description": "",
+      "order": 2,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.certificate",
+    "pk": 3,
+    "fields": {
+      "name": "Python Essentials 1 & JavaScript Essentials 1",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024",
+      "description": "",
+      "order": 3,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.certificate",
+    "pk": 4,
+    "fields": {
+      "name": "İleri Python Programlama Sertifikası",
+      "issuer": "BTK Akademi",
+      "date": "Haziran 2024",
+      "description": "",
+      "order": 4,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.sociallink",
+    "pk": 1,
+    "fields": {
+      "platform": "GitHub",
+      "url": "https://github.com/ErayCanYigit",
+      "icon_class": "bi bi-github",
+      "order": 1,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.sociallink",
+    "pk": 2,
+    "fields": {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/eray-can-yigit",
+      "icon_class": "bi bi-linkedin",
+      "order": 2,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  },
+  {
+    "model": "core.sociallink",
+    "pk": 3,
+    "fields": {
+      "platform": "Email",
+      "url": "mailto:erayc4nntr@gmail.com",
+      "icon_class": "bi bi-envelope",
+      "order": 3,
+      "updated_date": "2026-05-17T17:00:00Z",
+      "created_date": "2026-05-17T17:00:00Z"
+    }
+  }
+]
